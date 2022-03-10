@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Flex, Box } from '@chakra-ui/layout'
+import { Personalize } from '@ninetailed/experience-sdk-nextjs'
 
 import Footer from '@/components/footer'
 
@@ -21,7 +22,7 @@ export default function SiteLayout({ children, page, preview = false }) {
     <Flex flexDir="column" minH="100vh">
       <PreviewBanner enabled={preview} />
       <Box flexGrow="1">{children}</Box>
-      {page?.footer && <Footer {...page.footer} />}
+      {page?.footer && <Personalize {...page.footer} component={Footer} />}
     </Flex>
   )
 }

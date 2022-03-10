@@ -1172,72 +1172,76 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-11.1.4.tgz#370c310ba197e799235492bf71084d3acbbb2c6a"
   integrity sha512-7MPXYWsCo5qGZXyyJwBLvQkYi0hKARtpjGxjt/mdxn7A7O+jKJgAuxgOo/lnZIiXfbJzxRnSD8k6WkUwN0IVmg==
 
-"@ninetailed/experience-api-types@2.6.5":
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-api-types/-/experience-api-types-2.6.5.tgz#b3e95d9009d9061c306f852398bb18ab294c1aad"
-  integrity sha512-NvbthGVh/YWapF1Wr6Ip/U4TxajVu0b93zfqD1d+cXyH+pphyLQyTbRgqZYOddSYzKdEGp/DEZfucxpGL/1/wQ==
+"@ninetailed/experience-api-types@2.7.1-beta.0":
+  version "2.7.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience-api-types/-/experience-api-types-2.7.1-beta.0.tgz#5b2586b9721cc9a3f3c72a250f18fed5945979af"
+  integrity sha512-g4NQuKfbAfHVu6+VIKKMzY+u77YE8aRSjorF5TqbjNkRE6I+2hcJBkNfwwTcF8ZgylRC/KmEp4PIRkiO7tuMtQ==
   dependencies:
     i18n-iso-countries "^6.8.0"
     locale-enum "^1.1.1"
     tslib "^2.0.0"
 
-"@ninetailed/experience-sdk-core@2.6.5":
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-core/-/experience-sdk-core-2.6.5.tgz#cec75a52ea57cafb57f512c601e7cf8456e9d4bf"
-  integrity sha512-QxTVTqTpENl/P2tgKupL3C73iWTU1879Dp8oPdaGFloGANbUcUMqKPPWerNsrMlo2xHM4Ae84Z3XYZd7LciGiw==
+"@ninetailed/experience-sdk-core@2.7.1-beta.0":
+  version "2.7.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-core/-/experience-sdk-core-2.7.1-beta.0.tgz#cf041be010eef0125590152f273dcf56008508f7"
+  integrity sha512-yDstj9A3P08iAs4VNq/HzO0RtI8nslhJUjjxWfYvBYO79+eDREE8tqrG6vU0ZxglSDk35ab4xZGleNWMiKjqwg==
   dependencies:
-    "@ninetailed/experience-api-types" "2.6.5"
+    "@ninetailed/experience-api-types" "2.7.1-beta.0"
     i18n-iso-countries "^6.8.0"
     locale-enum "^1.1.1"
+    tslib "2.3.1"
     uuid "^8.3.2"
 
-"@ninetailed/experience-sdk-js@2.6.5":
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-js/-/experience-sdk-js-2.6.5.tgz#234fb390c275c5a58cd9111a3b7e0dd5770ac233"
-  integrity sha512-S1ZJO0AxpJUCUnTYLuKbhR5vgGpSruxeGUik/QvIRaZcA9VrwkKVWk9zqkAt8yYh+JAXIr9F0lSwiDex6axgDg==
+"@ninetailed/experience-sdk-js@2.7.1-beta.0":
+  version "2.7.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-js/-/experience-sdk-js-2.7.1-beta.0.tgz#b77ed17771a9361edbb2ba6ad1e39fb2d2d50716"
+  integrity sha512-NoojLsHQGwM7bhZZsTjNUPAohXfvsIz4iubTRZchckTK13LjNlcyYf1L3VXjuXzdOWhxclhMN+VkfmTku+MA3A==
   dependencies:
-    "@ninetailed/experience-api-types" "2.6.5"
-    "@ninetailed/experience-sdk-core" "2.6.5"
+    "@ninetailed/experience-api-types" "2.7.1-beta.0"
+    "@ninetailed/experience-sdk-core" "2.7.1-beta.0"
     analytics "^0.7.14"
     debug "^4.3.3"
     i18n-iso-countries "^6.8.0"
     locale-enum "^1.1.1"
     lodash "^4.17.21"
+    tslib "2.3.1"
     uuid "^8.3.2"
 
 "@ninetailed/experience-sdk-nextjs@2.7.1":
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-nextjs/-/experience-sdk-nextjs-2.6.5.tgz#6497e2e5519b13006557cb15f367b139d6f5fa2f"
-  integrity sha512-k4gobEg84/iJ5gkthcwXc/j/jZ6b7TAV2i+FNqg9rVmUyj/2xRVrNnYPj9FAgOi06Fa12qdZpkv4rmGt3N/NvA==
+  version "2.7.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-nextjs/-/experience-sdk-nextjs-2.7.1-beta.0.tgz#617b851dd2cf80dd9efa32080ee0efd7a16e9f8a"
+  integrity sha512-sh3I3k1dR6B48sjfZnEun0WlnUyHKqJT5ohpq4NWtUIovJBukIs1ShLP7VwZ55LU6vM6vN5jYxQYTvFbnPhlKQ==
   dependencies:
     "@analytics/google-analytics" "^0.5.3"
-    "@ninetailed/experience-api-types" "2.6.5"
-    "@ninetailed/experience-sdk-core" "2.6.5"
-    "@ninetailed/experience-sdk-js" "2.6.5"
-    "@ninetailed/experience-sdk-react" "2.6.5"
+    "@ninetailed/experience-api-types" "2.7.1-beta.0"
+    "@ninetailed/experience-sdk-core" "2.7.1-beta.0"
+    "@ninetailed/experience-sdk-js" "2.7.1-beta.0"
+    "@ninetailed/experience-sdk-react" "2.7.1-beta.0"
     analytics "^0.7.14"
     debug "^4.3.3"
     i18n-iso-countries "^6.8.0"
     locale-enum "^1.1.1"
     lodash "^4.17.21"
+    tslib "2.3.1"
     use-analytics "^0.0.5"
     uuid "^8.3.2"
 
-"@ninetailed/experience-sdk-react@2.6.5":
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-react/-/experience-sdk-react-2.6.5.tgz#e918b88486d1718c0f6b0ee00c27c117c0749fe3"
-  integrity sha512-yPubwJ8aqACwHVh0/HnNVDqjgkDGJjbgAdIFjNffd8K3Tjz1WVzVdQwtldKGtj4Trre2nmHqpXACP3X8ORc0bg==
+"@ninetailed/experience-sdk-react@2.7.1-beta.0":
+  version "2.7.1-beta.0"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-react/-/experience-sdk-react-2.7.1-beta.0.tgz#b90233db364099202df7b87b137c67c16041113a"
+  integrity sha512-aVWVybR/7SoYenLw8YTwtMnFPdWQdOPwosLp+svflXDouMB3qLeUt0buwSCFgH/9Hdbds4dPIotMBMLhw86Yrg==
   dependencies:
     "@analytics/google-analytics" "0.5.3"
-    "@ninetailed/experience-api-types" "2.6.5"
-    "@ninetailed/experience-sdk-core" "2.6.5"
-    "@ninetailed/experience-sdk-js" "2.6.5"
+    "@ninetailed/experience-api-types" "2.7.1-beta.0"
+    "@ninetailed/experience-sdk-core" "2.7.1-beta.0"
+    "@ninetailed/experience-sdk-js" "2.7.1-beta.0"
     analytics "^0.7.14"
     debug "^4.3.3"
     i18n-iso-countries "^6.8.0"
     locale-enum "^1.1.1"
     lodash "^4.17.21"
     react-visibility-sensor "5.1.1"
+    tslib "2.3.1"
     use-analytics "^0.0.5"
     uuid "^8.3.2"
 
@@ -5180,15 +5184,15 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
+tslib@2.3.1, tslib@^2.0.0, tslib@^2.0.3:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
 tslib@^1.0.0, tslib@^1.8.1, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.0.0, tslib@^2.0.3:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tslib@^2.1.0:
   version "2.2.0"

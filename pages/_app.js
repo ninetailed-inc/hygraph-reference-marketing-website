@@ -27,6 +27,7 @@ export default function App({ Component, pageProps }) {
             // //       '{{ baselineOrVariant }}:{{ component.__typename }} - {{ component.id }}',
             // //   },
             // // }}
+            url="https://develop-api.ninetailed.co"
             apiKey={process.env.NEXT_PUBLIC_NINETAILED_API_KEY ?? ''}
           >
       {getLayout(<Component {...pageProps} />)}
