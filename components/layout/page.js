@@ -25,6 +25,7 @@ export default function PageLayout({ children, page }) {
         <Personalize
           {...pageBanner}
           component={Marketing.Banner}
+          variants={pageBanner.variants || []}
         />
       )}
 
@@ -44,7 +45,7 @@ export default function PageLayout({ children, page }) {
         />
       ) : (
         <>
-          <Personalize {...page?.navigation} component={Navigation}  />
+          <Personalize {...page?.navigation} component={Navigation} variants={page?.navigation.variants || []} />
           <Box mx="auto" pt={24} px={[4, 6, null, 8]}>
             <Box
               display={[null, 'flex']}
@@ -80,7 +81,7 @@ export default function PageLayout({ children, page }) {
 
       <div>
         {children}
-        {pageNewsletter && <Personalize {...pageNewsletter} component={Marketing.NewsletterSignup} />}
+        {pageNewsletter && <Personalize {...pageNewsletter} component={Marketing.NewsletterSignup} variants={pageNewsletter.variants || []} />}
       </div>
     </>
   )

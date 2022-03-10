@@ -22,7 +22,7 @@ export default function SiteLayout({ children, page, preview = false }) {
     <Flex flexDir="column" minH="100vh">
       <PreviewBanner enabled={preview} />
       <Box flexGrow="1">{children}</Box>
-      {page?.footer && <Personalize {...page.footer} component={Footer} />}
+      {page?.footer && <Personalize {...page.footer} component={Footer} variants={page.footer.variants || []} />}
     </Flex>
   )
 }
