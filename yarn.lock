@@ -9,10 +9,10 @@
   dependencies:
     "@analytics/global-storage-utils" "^0.1.4"
 
-"@analytics/core@^0.10.23":
-  version "0.10.23"
-  resolved "https://registry.yarnpkg.com/@analytics/core/-/core-0.10.23.tgz#869218c28bae4948bdecfd76415064e83bb8ca8d"
-  integrity sha512-crOJ7tNA5xak5YGiiX8IvPyqf4Hy3tMmTH4dTvQiOapO6BiBJcxBUkjtJNPwZlhS4nmsWh0skeTBr4Kv92RzeA==
+"@analytics/core@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@analytics/core/-/core-0.11.0.tgz#a564a29976db56b64188e00cf236d9a64c59fea5"
+  integrity sha512-5Waj+Ca8bvCwqI/4/BKi/9hwV8FuQAW9PGgFUQcDbdWcEzmXp0SzzhTuP2mpO9oR4RquxqqGkU3d9zgulZa4Hg==
   dependencies:
     "@analytics/global-storage-utils" "^0.1.4"
     "@analytics/type-utils" "^0.5.4"
@@ -25,7 +25,7 @@
   dependencies:
     "@analytics/type-utils" "^0.5.4"
 
-"@analytics/google-analytics@0.5.3", "@analytics/google-analytics@^0.5.3":
+"@analytics/google-analytics@0.5.3":
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/@analytics/google-analytics/-/google-analytics-0.5.3.tgz#08642f6e9ab9a76aceb53356ea66c53552eec9b7"
   integrity sha512-5ZH3hpM8W/rhBrF+3TNjD2ZjabW4A8k/maqF4IGmWWNq31Bd8xh3KAhifDs76xn8hTWKGapTORZLfo87mB+9Dw==
@@ -300,13 +300,6 @@
   version "7.14.0"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.14.0.tgz"
   integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.12.1":
-  version "7.17.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
-  integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1172,77 +1165,59 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-11.1.4.tgz#370c310ba197e799235492bf71084d3acbbb2c6a"
   integrity sha512-7MPXYWsCo5qGZXyyJwBLvQkYi0hKARtpjGxjt/mdxn7A7O+jKJgAuxgOo/lnZIiXfbJzxRnSD8k6WkUwN0IVmg==
 
-"@ninetailed/experience-api-types@2.7.1-beta.0":
-  version "2.7.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-api-types/-/experience-api-types-2.7.1-beta.0.tgz#5b2586b9721cc9a3f3c72a250f18fed5945979af"
-  integrity sha512-g4NQuKfbAfHVu6+VIKKMzY+u77YE8aRSjorF5TqbjNkRE6I+2hcJBkNfwwTcF8ZgylRC/KmEp4PIRkiO7tuMtQ==
+"@ninetailed/experience.js-next@1.0.0-beta.9":
+  version "1.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience.js-next/-/experience.js-next-1.0.0-beta.9.tgz#671d4ea690537288f86949e2daf3a6733a2e5d1c"
+  integrity sha512-2CQ26Zhk1+DkKI8r/C00cfqSQkRMttqHE6Zlnffjrgbw/QnVOnyrbmOYWXeupbFIAerCOGgPdY/qBtARq2zcMg==
   dependencies:
-    i18n-iso-countries "^6.8.0"
-    locale-enum "^1.1.1"
-    tslib "^2.0.0"
-
-"@ninetailed/experience-sdk-core@2.7.1-beta.0":
-  version "2.7.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-core/-/experience-sdk-core-2.7.1-beta.0.tgz#cf041be010eef0125590152f273dcf56008508f7"
-  integrity sha512-yDstj9A3P08iAs4VNq/HzO0RtI8nslhJUjjxWfYvBYO79+eDREE8tqrG6vU0ZxglSDk35ab4xZGleNWMiKjqwg==
-  dependencies:
-    "@ninetailed/experience-api-types" "2.7.1-beta.0"
-    i18n-iso-countries "^6.8.0"
-    locale-enum "^1.1.1"
-    tslib "2.3.1"
-    uuid "^8.3.2"
-
-"@ninetailed/experience-sdk-js@2.7.1-beta.0":
-  version "2.7.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-js/-/experience-sdk-js-2.7.1-beta.0.tgz#b77ed17771a9361edbb2ba6ad1e39fb2d2d50716"
-  integrity sha512-NoojLsHQGwM7bhZZsTjNUPAohXfvsIz4iubTRZchckTK13LjNlcyYf1L3VXjuXzdOWhxclhMN+VkfmTku+MA3A==
-  dependencies:
-    "@ninetailed/experience-api-types" "2.7.1-beta.0"
-    "@ninetailed/experience-sdk-core" "2.7.1-beta.0"
-    analytics "^0.7.14"
-    debug "^4.3.3"
-    i18n-iso-countries "^6.8.0"
+    "@ninetailed/experience.js" "1.0.0-beta.9"
+    "@ninetailed/experience.js-react" "1.0.0-beta.9"
+    "@ninetailed/experience.js-shared" "1.0.0-beta.9"
+    analytics "^0.8.0"
+    i18n-iso-countries "^7.3.0"
     locale-enum "^1.1.1"
     lodash "^4.17.21"
-    tslib "2.3.1"
+    react-visibility-sensor "^5.1.1"
+    ts-toolbelt "^9.6.0"
     uuid "^8.3.2"
 
-"@ninetailed/experience-sdk-nextjs@2.7.1":
-  version "2.7.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-nextjs/-/experience-sdk-nextjs-2.7.1-beta.0.tgz#617b851dd2cf80dd9efa32080ee0efd7a16e9f8a"
-  integrity sha512-sh3I3k1dR6B48sjfZnEun0WlnUyHKqJT5ohpq4NWtUIovJBukIs1ShLP7VwZ55LU6vM6vN5jYxQYTvFbnPhlKQ==
-  dependencies:
-    "@analytics/google-analytics" "^0.5.3"
-    "@ninetailed/experience-api-types" "2.7.1-beta.0"
-    "@ninetailed/experience-sdk-core" "2.7.1-beta.0"
-    "@ninetailed/experience-sdk-js" "2.7.1-beta.0"
-    "@ninetailed/experience-sdk-react" "2.7.1-beta.0"
-    analytics "^0.7.14"
-    debug "^4.3.3"
-    i18n-iso-countries "^6.8.0"
-    locale-enum "^1.1.1"
-    lodash "^4.17.21"
-    tslib "2.3.1"
-    use-analytics "^0.0.5"
-    uuid "^8.3.2"
-
-"@ninetailed/experience-sdk-react@2.7.1-beta.0":
-  version "2.7.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@ninetailed/experience-sdk-react/-/experience-sdk-react-2.7.1-beta.0.tgz#b90233db364099202df7b87b137c67c16041113a"
-  integrity sha512-aVWVybR/7SoYenLw8YTwtMnFPdWQdOPwosLp+svflXDouMB3qLeUt0buwSCFgH/9Hdbds4dPIotMBMLhw86Yrg==
+"@ninetailed/experience.js-react@1.0.0-beta.9":
+  version "1.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience.js-react/-/experience.js-react-1.0.0-beta.9.tgz#4e7042b7ad1375d0c7b22e65e199bac58fdc3e61"
+  integrity sha512-jfBvj+s49s387pp4oKbT98ABWCtetJAO6dfuN1ZTVZDuUXktXFHbkG+ihTZnTaClhoTpDILleqkmnJ8dLCkigQ==
   dependencies:
     "@analytics/google-analytics" "0.5.3"
-    "@ninetailed/experience-api-types" "2.7.1-beta.0"
-    "@ninetailed/experience-sdk-core" "2.7.1-beta.0"
-    "@ninetailed/experience-sdk-js" "2.7.1-beta.0"
-    analytics "^0.7.14"
-    debug "^4.3.3"
-    i18n-iso-countries "^6.8.0"
+    "@ninetailed/experience.js" "1.0.0-beta.9"
+    "@ninetailed/experience.js-shared" "1.0.0-beta.9"
+    analytics "^0.8.0"
+    i18n-iso-countries "^7.3.0"
     locale-enum "^1.1.1"
     lodash "^4.17.21"
     react-visibility-sensor "5.1.1"
-    tslib "2.3.1"
-    use-analytics "^0.0.5"
+    ts-toolbelt "^9.6.0"
+    uuid "^8.3.2"
+
+"@ninetailed/experience.js-shared@1.0.0-beta.9":
+  version "1.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience.js-shared/-/experience.js-shared-1.0.0-beta.9.tgz#06921ec0565ad60fce74f7be01f98c0e0c91d46f"
+  integrity sha512-3DTRu1az4gZ/cVzI4AKLG4NhzBCMKtkyseF6rI3RnB/J0d0fDU+3/5HF3TafIKhR2+5HF6RseMiP1ht4MKY79Q==
+  dependencies:
+    i18n-iso-countries "^7.3.0"
+    locale-enum "^1.1.1"
+    ts-toolbelt "^9.6.0"
+    uuid "^8.3.2"
+
+"@ninetailed/experience.js@1.0.0-beta.9":
+  version "1.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/@ninetailed/experience.js/-/experience.js-1.0.0-beta.9.tgz#4dc4de2d9c8012563736c2750fdc857fdbce0513"
+  integrity sha512-jg6xdynP3Y2Bz5ZvVVBh8W49pgRDEYbmziwdZMvlVEwXOaTgHb6y4glr93hoiWNHvLtUtbk9U0Ucijy+0uWsOA==
+  dependencies:
+    "@ninetailed/experience.js-shared" "1.0.0-beta.9"
+    analytics "^0.8.0"
+    i18n-iso-countries "^7.3.0"
+    locale-enum "^1.1.1"
+    lodash "^4.17.21"
+    ts-toolbelt "^9.6.0"
     uuid "^8.3.2"
 
 "@node-rs/helper@1.2.1":
@@ -1448,12 +1423,12 @@ analytics-utils@^1.0.9:
     "@analytics/type-utils" "^0.5.4"
     dlv "^1.1.3"
 
-analytics@^0.7.14:
-  version "0.7.23"
-  resolved "https://registry.yarnpkg.com/analytics/-/analytics-0.7.23.tgz#cff8d43c67fa851229232bc251e58a27e2f863eb"
-  integrity sha512-9zujZOUmDnRGRNoKIXwongMlOV1Odi+5ftRpfTPlYYQfX7Kl6ttSaP2caFQhKr5SenSCW2RMIxiLzX+LynE7sw==
+analytics@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/analytics/-/analytics-0.8.0.tgz#b47c5e5b6a11652cb865232bbee77e19b3d2f472"
+  integrity sha512-ycDNi0xrlFOxi9mtFIsP3QAOfWZ6hzuetL82Dhfq4MGOqJMPkoWG0mDEEHYbbFlLsu3WQRlcLF2VU3K/qZP3Zw==
   dependencies:
-    "@analytics/core" "^0.10.23"
+    "@analytics/core" "^0.11.0"
     "@analytics/storage-utils" "^0.3.0"
 
 anser@1.4.9:
@@ -2174,13 +2149,6 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.1.tgz"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
-
-debug@^4.3.3:
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
-  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
 
@@ -3074,7 +3042,7 @@ hmac-drbg@^1.0.1:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.3.1:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -3116,10 +3084,10 @@ https-browserify@1.0.0, https-browserify@^1.0.0:
   resolved "https://registry.npmjs.org/https-browserify/-/https-browserify-1.0.0.tgz"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-i18n-iso-countries@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/i18n-iso-countries/-/i18n-iso-countries-6.8.0.tgz#eebbc75594c6832aff86176c1bb38daa133d6dfd"
-  integrity sha512-jJs/+CA6+VUICFxqGcB0vFMERGfhfvyNk+8Vb9EagSZkl7kSpm/kT0VyhvzM/zixDWEV/+oN9L7v/GT9BwzoGg==
+i18n-iso-countries@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/i18n-iso-countries/-/i18n-iso-countries-7.3.0.tgz#4e54855a2e5280ab9dacd6d51bc79d2336f83514"
+  integrity sha512-z7vFa/wSDx3lpxQZNr/+ZioUQNTYqk1NZoP6vxjukr554r/QxpSRkYFfE3ovKKW82GpyAw4/c6Zi+2Ebr4T0fA==
   dependencies:
     diacritics "1.3.0"
 
@@ -3735,14 +3703,6 @@ mime-types@~2.1.19:
   integrity sha512-6cP692WwGIs9XXdOO4++N+7qjqv0rqxxVvJ3VHPh/Sc9mVZcQP+ZGhkKiTvWMQRr2tbHkJP/Yn7Y0npb3ZBs4A==
   dependencies:
     mime-db "1.51.0"
-
-mini-create-react-context@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/mini-create-react-context/-/mini-create-react-context-0.4.1.tgz#072171561bfdc922da08a60c2197a497cc2d1d5e"
-  integrity sha512-YWCYEmd5CQeHGSAKrYvXgmzzkrvssZcuuQDDeqkT+PziKGMgE+0MCCtcKbROzocGBG1meBLl2FotlRwf4gAzbQ==
-  dependencies:
-    "@babel/runtime" "^7.12.1"
-    tiny-warning "^1.0.3"
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -4480,7 +4440,7 @@ react-transition-group@4.4.2:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react-visibility-sensor@5.1.1:
+react-visibility-sensor@5.1.1, react-visibility-sensor@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
   integrity sha512-cTUHqIK+zDYpeK19rzW6zF9YfT4486TIgizZW53wEZ+/GPBbK7cNS0EHyJVyHYacwFEvvHLEKfgJndbemWhB/w==
@@ -5097,16 +5057,6 @@ tiny-invariant@^1.0.6:
   resolved "https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.1.0.tgz"
   integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
 
-tiny-invariant@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.2.0.tgz#a1141f86b672a9148c72e978a19a73b9b94a15a9"
-  integrity sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==
-
-tiny-warning@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
-  integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
-
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz"
@@ -5174,6 +5124,11 @@ ts-pnp@^1.1.6:
   resolved "https://registry.npmjs.org/ts-pnp/-/ts-pnp-1.2.0.tgz"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
+ts-toolbelt@^9.6.0:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-9.6.0.tgz#50a25426cfed500d4a09bd1b3afb6f28879edfd5"
+  integrity sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==
+
 tsconfig-paths@^3.9.0:
   version "3.9.0"
   resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.9.0.tgz"
@@ -5184,15 +5139,15 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@2.3.1, tslib@^2.0.0, tslib@^2.0.3:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
-
 tslib@^1.0.0, tslib@^1.8.1, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.0.3:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tslib@^2.1.0:
   version "2.2.0"
@@ -5361,15 +5316,6 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
-
-use-analytics@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/use-analytics/-/use-analytics-0.0.5.tgz#5f0f2750c0f3393b8cd1f86a7aecbf02dae415ca"
-  integrity sha512-IM+H/ujkJK9cFqg/8O8uyFIRtU/fASYo35USyVNN/T6uswls65f8ZyexFfsAbg4jdqHS5xDyPiHICVxCZtfUpA==
-  dependencies:
-    hoist-non-react-statics "^3.3.2"
-    mini-create-react-context "^0.4.1"
-    tiny-invariant "^1.1.0"
 
 use-callback-ref@^1.2.3, use-callback-ref@^1.2.5:
   version "1.2.5"

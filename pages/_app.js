@@ -4,8 +4,8 @@ import { DefaultSeo } from 'next-seo'
 import { SiteLayout } from '@/layout'
 
 import {
-  PersonalizationProvider,
-} from '@ninetailed/experience-sdk-nextjs';
+  NinetailedProvider,
+} from '@ninetailed/experience.js-next';
 
 import { defaultSEO } from '../next-seo.config'
 import { theme } from '../styles/theme'
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <DefaultSeo {...defaultSEO} />
-      <PersonalizationProvider
+      <NinetailedProvider
             // // analyticsPlugins={{
             // //   googleAnalytics: {
             // //     trackingId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID ?? '',
@@ -27,11 +27,12 @@ export default function App({ Component, pageProps }) {
             // //       '{{ baselineOrVariant }}:{{ component.__typename }} - {{ component.id }}',
             // //   },
             // // }}
-            url="https://develop-api.ninetailed.co"
-            apiKey={process.env.NEXT_PUBLIC_NINETAILED_API_KEY ?? ''}
+            clientId={process.env.NEXT_PUBLIC_NINETAILED_CLIENT_ID ?? ''}
+            environment={process.env.NEXT_PUBLIC_NINETAILED_ENVIRONMENT ?? ''}
+            url={process.env.NEXT_PUBLIC_NINETAILED_URL ?? ''}
           >
       {getLayout(<Component {...pageProps} />)}
-      </PersonalizationProvider>
+      </NinetailedProvider>
     </ChakraProvider>
   )
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Flex, Box } from '@chakra-ui/layout'
-import { Personalize } from '@ninetailed/experience-sdk-nextjs'
+import { Personalize } from '@ninetailed/experience.js-next'
 
 import Footer from '@/components/footer'
 

@@ -1,6 +1,6 @@
 import { Box, Container, Heading } from '@chakra-ui/react'
 import { MDXRemote } from 'next-mdx-remote'
-import { Personalize } from '@ninetailed/experience-sdk-nextjs'
+import { Personalize } from '@ninetailed/experience.js-next'
 
 import { getSiteLayout } from '@/layout'
 import Hero from '@/components/hero'

@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="preconnect" href="https://develop-api.ninetailed.co" />
           <link
             rel="stylesheet"
             href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"

@@ -1,5 +1,5 @@
 import * as Blocks from '@/blocks'
-import { Personalize } from '@ninetailed/experience-sdk-nextjs'
+import { Personalize } from '@ninetailed/experience.js-next'
 
 export default function Wrapper({ banner, blocks, hero, navigation, ...page }) {
   return (
