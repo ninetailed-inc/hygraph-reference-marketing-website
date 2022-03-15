@@ -9,15 +9,6 @@ export default function IndexPage({ page }) {
 }
 
 export async function getStaticProps({ locale, preview = false }) {
-  console.log({ params })
-
-  const isPersonalized = get(params, 'slug.0', '').startsWith(';')
-  console.log({ isPersonalized })
-
-  const audiences = isPersonalized
-    ? get(params, 'slug.0', '').split(';')[1].split(',')
-    : []
-
   const client = graphcmsClient(preview)
 
   const { page } = await client.request(pageQuery, {
