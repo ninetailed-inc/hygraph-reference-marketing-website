@@ -14,12 +14,7 @@ export async function middleware(req) {
     return NextResponse.next()
   }
 
-  console.log(req.cookies);
-
-
   const { profile } = await getEdgeSideProfile({
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     ctx: buildEsrNinetailedRequestContext({ req }),
     url: process.env.NEXT_PUBLIC_NINETAILED_URL ?? '',
     apiKey: process.env.NEXT_PUBLIC_NINETAILED_CLIENT_ID ?? '',
@@ -31,8 +26,6 @@ export async function middleware(req) {
       country: req.geo.country
     }
   })
-
-  console.log(profile);
 
   let response = NextResponse.next()
 
