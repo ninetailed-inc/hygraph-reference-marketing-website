@@ -6,6 +6,8 @@ module.exports = {
     locales: locales.map((locale) => locale.value)
   },
   images: {
-    domains: ['media.graphcms.com']
+    domains: ['media.graphassets.com', 'media.graphcms.com'],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   }
 }

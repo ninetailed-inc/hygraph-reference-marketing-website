@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import {
-  getEdgeSideProfile,
-  buildEsrNinetailedRequestContext
+  fetchEdgeProfile,
+  buildNinetailedEdgeRequestContext
 } from '@ninetailed/experience.js-next-esr'
 
 const excludedPrefixes = ['/favicon', '/api']
@@ -14,10 +14,10 @@ export async function middleware(req) {
     return NextResponse.next()
   }
 
-  const { profile } = await getEdgeSideProfile({
-    ctx: buildEsrNinetailedRequestContext({ req }),
+  const { profile } = await fetchEdgeProfile({
+    ctx: buildNinetailedEdgeRequestContext({ req }),
     url: process.env.NEXT_PUBLIC_NINETAILED_URL ?? '',
-    apiKey: process.env.NEXT_PUBLIC_NINETAILED_CLIENT_ID ?? '',
+    clientId: process.env.NEXT_PUBLIC_NINETAILED_CLIENT_ID ?? '',
     cookies: req.cookies,
     ip: req.ip,
     location: {
