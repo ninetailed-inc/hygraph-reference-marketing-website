@@ -11,17 +11,8 @@ export default function Page({ page }) {
   return <Wrapper {...page} />
 }
 
-const INDEX_ROUTE_SLUG = 'home'
-
 export async function getStaticProps({ locale, params, preview = false }) {
-  const isPersonalized = get(params, 'slug.0', '').startsWith(';')
-  const audiences = isPersonalized
-    ? get(params, 'slug.0', '').split(';')[1].split(',')
-    : []
-  const slug =
-    (isPersonalized
-      ? get(params, 'slug', []).slice(1).join('/')
-      : get(params, 'slug', []).join('/')) || INDEX_ROUTE_SLUG
+  const slug = get(params, 'slug', []).slice(1).join('/');
   const client = graphcmsClient(preview)
   const { page } = await client.request(pageQuery, {
     locale,
@@ -39,7 +30,6 @@ export async function getStaticProps({ locale, params, preview = false }) {
   return {
     props: {
       page: parsedPageData,
-      ninetailed: { audiences },
       preview
     },
     revalidate: 10
