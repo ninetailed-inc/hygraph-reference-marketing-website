@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
       <NinetailedProvider
         clientId={process.env.NEXT_PUBLIC_NINETAILED_CLIENT_ID ?? ''}
         environment={process.env.NEXT_PUBLIC_NINETAILED_ENVIRONMENT ?? ''}
-        url={process.env.NEXT_PUBLIC_NINETAILED_URL ?? ''}
+        // url={process.env.NEXT_PUBLIC_NINETAILED_URL ?? ''}
         // plugins={[
         //   NinetailedSsrPlugin(),
         //   NinetailedPreviewPlugin({ clientId: '085abef3-67a9-463f-a22d-6c8db44218c5', secret: '58ec390d-83ea-4e76-9ffd-8c22b63f71b0' }),
