@@ -21,7 +21,9 @@ export default function PersonCard({ name, photo, role }) {
               src={photo.url}
               alt={name}
               title={name}
-              layout="fill"
+              width={photo.width}
+              height={photo.height}
+              // layout="fill"
             />
           ) : (
             <Box as={AvatarIcon} h="full" w="full" color="gray.300" />

@@ -11,10 +11,10 @@ function PreviewBanner({ enabled = false }) {
     <Box textAlign="center" p="2" backgroundColor="black" textColor="white">
       Preview Mode Enabled (Content served from DRAFT) &mdash;&nbsp;
       <Link href="/api/exit-preview">
-        <a>Exit Preview Mode</a>
+        Exit Preview Mode
       </Link>
     </Box>
-  )
+  );
 }
 
 export default function SiteLayout({ children, page, preview = false }) {

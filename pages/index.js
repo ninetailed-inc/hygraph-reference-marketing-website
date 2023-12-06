@@ -23,7 +23,7 @@ export async function getStaticProps({ locale, preview = false }) {
       page: parsedPageData,
       preview
     },
-    revalidate: 10
+    revalidate: 5 // Demo purposes only!
   }
 }
 

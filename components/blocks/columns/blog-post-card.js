@@ -26,7 +26,7 @@ export default function BlogPostCard({
             title={coverImage.title}
             width={coverImage.width}
             height={coverImage.height}
-            objectFit="cover"
+            // objectFit="cover"
           />
         )}
       </Box>
@@ -42,7 +42,7 @@ export default function BlogPostCard({
           <Text fontSize="sm" fontWeight="medium" color="indigo.600">
             {startCase(category.toLowerCase())}
           </Text>
-          <NextLink href={`/blog/${slug}`}>
+          <NextLink href={`/blog/${slug}`} legacyBehavior>
             <Link
               display="block"
               mt={2}
@@ -84,7 +84,9 @@ export default function BlogPostCard({
                     src={author.photo.url}
                     alt={author.name}
                     title={author.name}
-                    layout="fill"
+                    width={author.photo.width}
+                    height={author.photo.height}
+                    // layout="fill"
                   />
                 </Box>
               )

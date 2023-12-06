@@ -94,10 +94,10 @@ export default function Navigation({ pages }) {
               <Flex alignItems="center" justifyContent="space-between">
                 <div>
                   <Link href="/">
-                    <a>
-                      <VisuallyHidden>GraphCMS</VisuallyHidden>
-                      <Box as={MarkSVG} h={8} w="auto" color="indigo.600" />
-                    </a>
+
+                    <VisuallyHidden>GraphCMS</VisuallyHidden>
+                    <Box as={MarkSVG} h={8} w="auto" color="indigo.600" />
+
                   </Link>
                 </div>
                 <Box mr={-2}>
@@ -126,7 +126,7 @@ export default function Navigation({ pages }) {
                       const isActive = router.asPath.startsWith(`/${page.slug}`)
 
                       return (
-                        <Link key={page.id} href={`/${page.slug}`} passHref>
+                        <Link key={page.id} href={`/${page.slug}`} passHref legacyBehavior>
                           <ChakraLink
                             m={-3}
                             p={3}
@@ -151,7 +151,7 @@ export default function Navigation({ pages }) {
                             </Text>
                           </ChakraLink>
                         </Link>
-                      )
+                      );
                     })}
                   </Grid>
                 )}
@@ -172,10 +172,10 @@ export default function Navigation({ pages }) {
         >
           <Flex w={{ lg: 0 }} flex={{ lg: '1 1 0' }}>
             <Link href="/">
-              <a>
-                <VisuallyHidden>GraphCMS</VisuallyHidden>
-                <Box as={LogoSVG} h={10} color="indigo.600" w="auto" />
-              </a>
+
+              <VisuallyHidden>GraphCMS</VisuallyHidden>
+              <Box as={LogoSVG} h={10} color="indigo.600" w="auto" />
+
             </Link>
           </Flex>
           <Box mr={-2} my={-2} display={{ md: 'none' }}>
@@ -207,7 +207,7 @@ export default function Navigation({ pages }) {
                 const isActive = router.asPath.startsWith(`/${page.slug}`)
 
                 return (
-                  <Link key={page.id} href={`/${page.slug}`} passHref>
+                  <Link key={page.id} href={`/${page.slug}`} passHref legacyBehavior>
                     <ChakraLink
                       fontSize="md"
                       fontWeight="medium"
@@ -220,12 +220,12 @@ export default function Navigation({ pages }) {
                         page.slug.charAt(0).toUpperCase() + page.slug.slice(1)}
                     </ChakraLink>
                   </Link>
-                )
+                );
               })}
             </Stack>
           )}
         </Stack>
       </Box>
     </Box>
-  )
+  );
 }

@@ -38,7 +38,7 @@ function GridColumn({ links, title }) {
       <Stack as="ul" mt={4} spacing={4}>
         {links.map((link) => (
           <li key={link.id}>
-            <Link href={`/${link.slug}`} passHref>
+            <Link href={`/${link.slug}`} passHref legacyBehavior>
               <ChakraLink
                 color="gray.300"
                 _hover={{
@@ -119,7 +119,7 @@ export default function Footer({ primaryLinks, secondaryLinks }) {
                   Language
                 </VisuallyHidden>
 
-                <Box position="relative">
+                {/* <Box position="relative">
                   <Select
                     id="language"
                     name="language"
@@ -142,7 +142,7 @@ export default function Footer({ primaryLinks, secondaryLinks }) {
                       </Box>
                     ))}
                   </Select>
-                </Box>
+                </Box> */}
               </Box>
             </Box>
           </Box>

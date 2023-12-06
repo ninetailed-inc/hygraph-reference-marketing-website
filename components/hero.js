@@ -78,9 +78,11 @@ export default function Hero({ buttons, image, navigation, page }) {
             src={image.url}
             alt={image.title}
             title={image.title}
-            layout="fill"
+            width={image.width}
+            height={image.height}
+            // layout="fill"
             priority={true}
-            objectFit="cover"
+            // objectFit="cover"
           />
         </Box>
       </Box>

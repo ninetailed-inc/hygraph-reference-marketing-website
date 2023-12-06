@@ -12,14 +12,12 @@ export default function Page({ page }) {
 }
 
 export async function getStaticProps({ locale, params, preview = false }) {
-  const slug = get(params, 'slug', []).join('/');
+  const slug = get(params, 'slug', []).join('/')
   const client = graphcmsClient(preview)
   const { page } = await client.request(pageQuery, {
     locale,
     slug
   })
-
-  console.log(page);
 
   if (!page) {
     return {
@@ -34,7 +32,7 @@ export async function getStaticProps({ locale, params, preview = false }) {
       page: parsedPageData,
       preview
     },
-    revalidate: 10
+    revalidate: 5 // Demo purposes only!
   }
 }
 

@@ -89,7 +89,9 @@ export default function BlogPost({ nextPost, post, previousPost }) {
                         src={author.photo.url}
                         alt={author.name}
                         title={author.name}
-                        layout="fill"
+                        width={author.photo.width}
+                        height={author.photo.height}
+                        // layout="fill"
                       />
                     </Box>
                     <Box
@@ -123,7 +125,7 @@ export default function BlogPost({ nextPost, post, previousPost }) {
                   title={post.coverImage.title}
                   height={post.coverImage.height}
                   width={post.coverImage.width}
-                  objectFit="cover"
+                  // objectFit="cover"
                 />
               </Box>
             )}
@@ -167,7 +169,7 @@ export default function BlogPost({ nextPost, post, previousPost }) {
                       }}
                     >
                       <NextLink href={`/blog/${nextPost.slug}`}>
-                        <a>{nextPost.title}</a>
+                        {nextPost.title}
                       </NextLink>
                     </Box>
                   </div>
@@ -192,7 +194,7 @@ export default function BlogPost({ nextPost, post, previousPost }) {
                       }}
                     >
                       <NextLink href={`/blog/${previousPost.slug}`}>
-                        <a>{previousPost.title}</a>
+                        {previousPost.title}
                       </NextLink>
                     </Box>
                   </div>
@@ -200,7 +202,7 @@ export default function BlogPost({ nextPost, post, previousPost }) {
               </Stack>
             )}
             <Box pt={8}>
-              <NextLink href="/blog">
+              <NextLink href="/blog" legacyBehavior>
                 <Link
                   color="indigo.500"
                   _hover={{
@@ -247,7 +249,7 @@ export async function getStaticProps({ locale, params, preview = false }) {
       previousPost,
       preview
     },
-    revalidate: 60
+    revalidate: 5 // Demo puropses only!
   }
 }
 

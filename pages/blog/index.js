@@ -47,7 +47,7 @@ export async function getStaticProps({ locale, preview = false }) {
       posts: parsedPostData,
       preview
     },
-    revalidate: 60
+    revalidate: 5 // Demo purposes only!
   }
 }
 

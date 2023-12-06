@@ -29,9 +29,9 @@ export default function LogoCloud({ companies, logoCloudTitle }) {
                 <Box pos="relative" w={44}>
                   <Image
                     src={company.logo.url}
-                    height={company.logo.height}
                     width={company.logo.width}
-                    layout="responsive"
+                    height={company.logo.height}
+                    // layout="responsive"
                     alt={company.logo.title}
                   />
                 </Box>
