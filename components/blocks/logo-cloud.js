@@ -16,24 +16,24 @@ export default function LogoCloud({ companies, logoCloudTitle }) {
             mt={-4}
             ml={{ base: -8, lg: -4 }}
             flexWrap="wrap"
-            justifyContent="space-between"
+            justifyContent="space-around"
+            gap="24px"
           >
             {companies.map((company) => (
               <Flex
                 key={company.id}
-                mt={4}
-                ml={{ base: 8, lg: 4 }}
-                flexGrow={{ base: 1, lg: 0 }}
-                flexShrink="0"
+                justifyContent="center"
+                alignItems="center"
+                width="150px"
+                height="150px"
+                position="relative"
               >
-                <Box pos="relative" w={44}>
-                  <Image
-                    src={company.logo.url}
-                    width={company.logo.width}
-                    height={company.logo.height}
-                    alt={company.logo.handle}
-                  />
-                </Box>
+                <Image
+                  src={company.logo.url}
+                  alt={company.logo.handle}
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
+                  fill
+                />
               </Flex>
             ))}
           </Flex>

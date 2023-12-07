@@ -16,7 +16,7 @@ export default function Wrapper({ blocks, ...page }) {
             component={Component}
             page={page}
             variants={
-              block.variants.map((variant) => ({ ...variant, page })) || []
+              block.variants?.map((variant) => ({ ...variant, page })) || []
             }
           ></Personalize>
         )

@@ -21,12 +21,19 @@ export default function App({ Component, pageProps }) {
         clientId={process.env.NEXT_PUBLIC_NINETAILED_CLIENT_ID ?? ''}
         environment={process.env.NEXT_PUBLIC_NINETAILED_ENVIRONMENT ?? ''}
         plugins={[
-          NinetailedPreviewPlugin({
-            clientId:
-              process.env.NEXT_PUBLIC_NINETAILED_MANAGEMENT_CLIENT_ID ?? '',
-            secret: process.env.NEXT_PUBLIC_NINETAILED_MANAGEMENT_SECRET ?? '',
-            environment: process.env.NEXT_PUBLIC_NINETAILED_ENVIRONMENT ?? ''
-          })
+          ...(pageProps.preview
+            ? [
+                NinetailedPreviewPlugin({
+                  clientId:
+                    process.env.NEXT_PUBLIC_NINETAILED_MANAGEMENT_CLIENT_ID ??
+                    '',
+                  secret:
+                    process.env.NEXT_PUBLIC_NINETAILED_MANAGEMENT_SECRET ?? '',
+                  environment:
+                    process.env.NEXT_PUBLIC_NINETAILED_ENVIRONMENT ?? ''
+                })
+              ]
+            : [])
           //   NinetailedSsrPlugin(),
           //   NinetailedGoogleAnalyticsPlugin({ trackingId: 'UA-155' })
         ]}
