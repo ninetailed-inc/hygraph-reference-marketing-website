@@ -68,6 +68,14 @@ export const theme = extendTheme({
             textDecoration: 'none',
             backgroundColor: 'gray.50'
           }
+        },
+        ORANGE: {
+          bg: 'orange.500',
+          color: 'white',
+          _hover: {
+            textDecoration: 'none',
+            backgroundColor: 'gray.50'
+          }
         }
       }
     }

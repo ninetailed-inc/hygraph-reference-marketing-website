@@ -22,11 +22,9 @@ export default function BlogPostCard({
           <Image
             className="blog-post-card-image"
             src={coverImage.url}
-            alt={coverImage.title}
-            title={coverImage.title}
+            alt={coverImage.handle}
             width={coverImage.width}
             height={coverImage.height}
-            // objectFit="cover"
           />
         )}
       </Box>
@@ -83,10 +81,8 @@ export default function BlogPostCard({
                     className="avatar"
                     src={author.photo.url}
                     alt={author.name}
-                    title={author.name}
                     width={author.photo.width}
                     height={author.photo.height}
-                    // layout="fill"
                   />
                 </Box>
               )

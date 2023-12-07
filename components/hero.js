@@ -1,11 +1,12 @@
 import { Box, Heading, Stack } from '@chakra-ui/react'
 import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote'
+import Markdown from 'react-markdown'
 
 import Button from '@/components/button'
 import Navigation from '@/components/navigation'
 
-export default function Hero({ buttons, image, navigation, page }) {
+export default function Hero({ buttons, image, navigation, subtitle, page }) {
   return (
     <Box position="relative" bg="gray.50">
       <Navigation {...navigation} />
@@ -30,7 +31,7 @@ export default function Hero({ buttons, image, navigation, page }) {
             >
               {page.title}
             </Heading>
-            {page.subtitle && (
+            {subtitle && (
               <Box
                 className="prose prose-lg sm:prose-xl"
                 mt={[3, null, 5]}
@@ -38,7 +39,7 @@ export default function Hero({ buttons, image, navigation, page }) {
                 maxW={['md', null, '3xl']}
                 mx="auto"
               >
-                <MDXRemote {...page.subtitle.mdx} />
+                <Markdown>{subtitle}</Markdown>
               </Box>
             )}
             {buttons && (
@@ -76,13 +77,10 @@ export default function Hero({ buttons, image, navigation, page }) {
           <Image
             className="hero-image"
             src={image.url}
-            alt={image.title}
-            title={image.title}
+            alt={image.handle}
             width={image.width}
             height={image.height}
-            // layout="fill"
             priority={true}
-            // objectFit="cover"
           />
         </Box>
       </Box>

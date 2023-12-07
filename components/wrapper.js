@@ -1,7 +1,7 @@
 import * as Blocks from '@/blocks'
 import { Personalize } from '@ninetailed/experience.js-next'
 
-export default function Wrapper({ banner, blocks, hero, navigation, ...page }) {
+export default function Wrapper({ blocks, ...page }) {
   return (
     <>
       {blocks.map((block) => {

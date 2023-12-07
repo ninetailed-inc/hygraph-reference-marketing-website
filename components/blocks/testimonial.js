@@ -27,10 +27,9 @@ export default function Testimonial({ content, person }) {
           <Box h={8} pos="relative">
             <Image
               src={person.company.logo.url}
-              alt={person.company.logo.title}
+              alt={person.company.logo.handle}
               width={person.company.logo.width}
               height={person.company.logo.height}
-              // layout="fill"
             />
           </Box>
           <Box as="blockquote" mt={10}>
@@ -59,7 +58,6 @@ export default function Testimonial({ content, person }) {
                       src={person.photo.url}
                       width={person.photo.width}
                       height={person.photo.height}
-                      // layout="fill"
                     />
                   </Box>
                 </Box>
