@@ -8,7 +8,7 @@ const themeColor = {
 }
 
 export default function Banner({ content, href, theme = 'WARNING' }) {
-  if (!content || !href) return null
+  if (!content) return null
 
   return (
     <Box
@@ -26,16 +26,18 @@ export default function Banner({ content, href, theme = 'WARNING' }) {
               {parseMergeTags(content)}
             </Text>
           </Flex>
-          <Box w={['full', 'auto']} order={[3, 2]} mt={[2, 0]} flexShrink="0">
-            <Box borderRadius="md" boxShadow="sm">
-              <Button
-                href={href}
-                label="Learn more"
-                size="SMALL"
-                theme="WHITE"
-              />
+          {href && (
+            <Box w={['full', 'auto']} order={[3, 2]} mt={[2, 0]} flexShrink="0">
+              <Box borderRadius="md" boxShadow="sm">
+                <Button
+                  href={href}
+                  label="Learn more"
+                  size="SMALL"
+                  theme="WHITE"
+                />
+              </Box>
             </Box>
-          </Box>
+          )}
         </Flex>
       </Box>
     </Box>

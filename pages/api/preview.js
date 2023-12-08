@@ -1,15 +1,15 @@
-import { graphcmsClient } from '@/lib/_client'
+import { hygraphClient } from '@/lib/_client'
 import { pageQuery, blogPostQuery } from '@/lib/_queries'
 
 export default async function handler(req, res) {
   if (
-    req.query.secret !== process.env.GRAPHCMS_PREVIEW_SECRET ||
+    req.query.secret !== process.env.HYPGRAPH_PREVIEW_SECRET ||
     !req.query.slug
   ) {
     return res.status(401).json({ message: 'Invalid token' })
   }
 
-  const client = graphcmsClient(true)
+  const client = hygraphClient(true)
 
   const [rootSlug, nestedSlug] = req.query.slug.split('/')
 
