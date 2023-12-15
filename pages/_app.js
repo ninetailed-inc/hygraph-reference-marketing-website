@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
         plugins={[
           ...(pageProps.preview
             ? [
-                NinetailedPreviewPlugin({
+                new NinetailedPreviewPlugin({
                   clientId:
                     process.env.NEXT_PUBLIC_NINETAILED_MANAGEMENT_CLIENT_ID ??
                     '',
