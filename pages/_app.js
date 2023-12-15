@@ -2,7 +2,6 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { DefaultSeo } from 'next-seo'
 import { NinetailedProvider } from '@ninetailed/experience.js-next'
 import { NinetailedPreviewPlugin } from '@ninetailed/experience.js-plugin-preview'
-// import { NinetailedGoogleAnalyticsPlugin } from '@ninetailed/experience.js-plugin-google-analytics'
 
 import { SiteLayout } from '@/layout'
 
@@ -34,10 +33,7 @@ export default function App({ Component, pageProps }) {
                 })
               ]
             : [])
-          //   NinetailedSsrPlugin(),
-          //   NinetailedGoogleAnalyticsPlugin({ trackingId: 'UA-155' })
         ]}
-        // url={process.env.NEXT_PUBLIC_NINETAILED_URL ?? ''}
       >
         {getLayout(<Component {...pageProps} />)}
       </NinetailedProvider>
